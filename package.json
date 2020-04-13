@@ -1,7 +1,7 @@
 {
   "name": "hefe-rechner",
   "version": "1.0.0",
-  "description": "Verhältnis von trockener zu frischer Hefe einfach ausrechnen!",
+  "description": "Im Rezept steht frische Hefe, du hast nur noch Trockenhefe! Wie war das nochmal?",
   "author": "Sascha Helmund",
   "private": true,
   "scripts": {
