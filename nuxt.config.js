@@ -50,8 +50,12 @@ export default {
   pwa: {
     meta: {
       'theme-color': '#bc986a',
+      name: 'Hefe Rechner',
+      ogSiteName: 'Hefe Rechner',
       author: 'Sascha Helmund',
-      description: 'Im Rezept steht frische Hefe, du hast nur noch Trockenhefe! Wie war das nochmal?'
+      description: 'Im Rezept steht frische Hefe, du hast nur noch Trockenhefe! Wie war das nochmal?',
+      ogDescription: 'Im Rezept steht frische Hefe, du hast nur noch Trockenhefe! Wie war das nochmal?',
+      lang: 'de'
     }
   },
   /*
