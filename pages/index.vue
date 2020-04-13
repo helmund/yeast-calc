@@ -24,7 +24,6 @@
       </label>
       <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
         <svg
-          id="Ebene_1"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -81,7 +80,6 @@
       >Frische Hefe</label>
       <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
         <svg
-          id="Ebene_1"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -125,7 +123,7 @@
 
     <div class="py-4 flex justify-center items-center">
       <div class="mx-2">
-        <img src="/icon-yeast-package.svg" class="w-12">
+        <img src="/icon-yeast-package.svg" class="w-12" alt="Icon einer Packung Trockenhefe">
       </div>
       <div>
         <span
@@ -143,7 +141,7 @@
         </span>
       </div>
       <div class="mx-2">
-        <img src="/icon-yeast-cube.svg" class="w-12">
+        <img src="/icon-yeast-cube.svg" class="w-12" alt="Icon eines Würfels frischer Hefe">
       </div>
     </div>
     <div class="font-serif text-md my-4">
