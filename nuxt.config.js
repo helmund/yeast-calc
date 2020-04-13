@@ -46,6 +46,14 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv'
   ],
+
+  pwa: {
+    meta: {
+      'theme-color': '#bc986a',
+      author: 'Sascha Helmund',
+      description: 'Im Rezept steht frische Hefe, du hast nur noch Trockenhefe! Wie war das nochmal?'
+    }
+  },
   /*
   ** Build configuration
   */

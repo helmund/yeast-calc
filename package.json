@@ -1,7 +1,7 @@
 {
-  "name": "yeast-calc",
+  "name": "Hefe Rechner",
   "version": "1.0.0",
-  "description": "My divine Nuxt.js project",
+  "description": "Verhältnis von trockener zu frischer Hefe einfach ausrechnen!",
   "author": "Sascha Helmund",
   "private": true,
   "scripts": {
