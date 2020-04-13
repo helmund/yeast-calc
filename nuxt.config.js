@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Hefe Rechner',
+    title: 'Hefe Rechner ⚖️',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -50,18 +50,18 @@ export default {
   pwa: {
     meta: {
       'theme-color': '#bc986a',
-      name: 'Hefe Rechner',
-      ogSiteName: 'Hefe Rechner',
+      name: 'Hefe Rechner ⚖️',
+      ogSiteName: 'Hefe Rechner ⚖️',
       author: 'Sascha Helmund',
-      description: 'Im Rezept steht frische Hefe, du hast nur noch Trockenhefe! Wie war das nochmal?',
-      ogDescription: 'Im Rezept steht frische Hefe, du hast nur noch Trockenhefe! Wie war das nochmal?',
+      description: 'Im Rezept steht frische Hefe, du hast nur noch Trockenhefe! Wie war das nochmal? 🤷🏻 Mit dem Hefe Rechner ganz einfach und schnell umrechnen!',
+      ogDescription: 'Im Rezept steht frische Hefe, du hast nur noch Trockenhefe! Wie war das nochmal? 🤷🏻 Mit dem Hefe Rechner ganz einfach und schnell umrechnen!',
       lang: 'de'
     },
     manifest: {
       theme_color: '#bc986a',
       background_color: '#FBEEC1',
-      name: 'Hefe Rechner',
-      short_name: 'Hefe Rechner',
+      name: 'Hefe Rechner ⚖️',
+      short_name: 'Hefe Rechner ⚖️',
       lang: 'de',
       icons: [
         {
