@@ -56,6 +56,27 @@ export default {
       description: 'Im Rezept steht frische Hefe, du hast nur noch Trockenhefe! Wie war das nochmal?',
       ogDescription: 'Im Rezept steht frische Hefe, du hast nur noch Trockenhefe! Wie war das nochmal?',
       lang: 'de'
+    },
+    manifest: {
+      theme_color: '#bc986a',
+      background_color: '#FBEEC1',
+      name: 'Hefe Rechner',
+      short_name: 'Hefe Rechner',
+      lang: 'de',
+      icons: [
+        {
+          src: 'manifest-icon-192.png',
+          sizes: '192x192',
+          type: 'image/png',
+          purpose: 'maskable any'
+        },
+        {
+          src: 'manifest-icon-512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'maskable any'
+        }
+      ]
     }
   },
   /*
