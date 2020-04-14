@@ -146,12 +146,29 @@
     </div>
     <div class="font-serif text-md my-4">
       <h2 class="text-xl border-b-2 border-frost inline">
-        Info
+        Warum?
       </h2>
       <p class="mt-2">
         In Rezepten ließt man immer von Trockenhefe oder von frischer Hefe, aber wie verhalten sich diese zueinander?
       </p>
       <p>Hier kannst du es schnell ausrechnen!</p>
+    </div>
+    <div
+      class="fixed bottom-0 inset-x-0 py-4 px-4 flex justify-end flex-col"
+      :class="{'shadow-top': overlayOpen, 'shadow-none': !overlayOpen}"
+    >
+      <div class="w-6 h-6 border border-black border-solid flex items-center justify-center rounded-full font-serif ml-auto" @click="toggleOverlay">
+        <span v-if="overlayOpen">
+          ✗
+        </span>
+        <span v-else>i</span>
+      </div>
+      <transition name="slide">
+        <div v-if="overlayOpen" class="text-md">
+          <p>Made by Sascha Helmund</p>
+          <p>basierend auf der Umrechnungstabelle von <a class="text-frost" href="http://tomateninsel.de/umrechnungstabelle-hefe/">tomateninsel.de <small>🔗</small></a></p>
+        </div>
+      </transition>
     </div>
   </div>
 </template>
@@ -166,7 +183,8 @@ export default {
       freshYeastValue: '',
       dryYeastValue: '',
       isActive: false,
-      errorNaN: false
+      errorNaN: false,
+      overlayOpen: false
     }
   },
   methods: {
@@ -190,8 +208,8 @@ export default {
         this.errorNaN = true
       }
 
-      if (this.dryYeastValue === 7) {
-        console.log('ein Paeckchen')
+      if (this.dryYeastValue === '7') {
+        // console.log('ein Paeckchen')
       }
     },
 
@@ -201,10 +219,39 @@ export default {
       } else {
         this.isActive = true
       }
+    },
+
+    toggleOverlay () {
+      if (this.overlayOpen === true) {
+        this.overlayOpen = false
+      } else {
+        this.overlayOpen = true
+      }
     }
   }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+  .shadow-top {
+    box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 -1px 2px 0 rgba(0, 0, 0, 0.06)
+  }
+  .slide-enter-active {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+  }
+
+  .slide-leave-active {
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  }
+  .slide-enter-to, .slide-leave {
+    max-height: 100px;
+    overflow: hidden;
+  }
+
+  .slide-enter, .slide-leave-to {
+    overflow: hidden;
+    max-height: 0;
+  }
 </style>
