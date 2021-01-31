@@ -1,6 +1,8 @@
-# yeast-calc
+# Hefe Rechner
 
-> My divine Nuxt.js project
+Calculates the amount of fresh or dry yeast depending on your recipe
+
+[hefe-rechner.info](http://hefe-rechner.info/)
 
 ## Build Setup
 
